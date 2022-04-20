@@ -36,14 +36,11 @@ header {
     z-index: 999;
   }
 
-header.header__logo {
-    height: 3rem;
-    width: 3rem;
-    
-}
+nav {
+  background-color: #007785;
+  width: 100%;
+  text-decoration: none;
 
-header.header__logo img {
-    width: 100%;
 }
 header .header__burguerMenu {
     display: flex;
