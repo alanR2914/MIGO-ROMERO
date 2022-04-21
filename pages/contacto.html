@@ -49,7 +49,51 @@
       
     </header>
     <main class="contact__mainContainer">
-        <form action="" class="contact__form">
+      <form class="was-validated">
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label">Contactanos</label>
+          <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Escriba su consulta" required></textarea>
+          <div class="invalid-feedback">
+            Por favor ingrese mensaje
+          </div>
+        </div>
+      
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+          <label class="form-check-label" for="validationFormCheck1">Soy Cliente</label>
+          <div class="invalid-feedback"></div>
+        </div>
+      
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck2">me interesa recibir info</label>
+        </div>
+        <div class="form-check mb-3">
+          <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck3">me gustaria aprender</label>
+          <div class="invalid-feedback">por favor responda una</div>
+        </div>
+      
+        <div class="mb-3">
+          <select class="form-select" required aria-label="select example">
+            <option value="">tipo de servicio requerido</option>
+            <option value="1">servicio</option>
+            <option value="2">curso</option>
+            <option value="3">consulta</option>
+          </select>
+          <div class="invalid-feedback">elija un servicio</div>
+        </div>
+      
+        <div class="mb-3">
+          <input type="file" class="form-control" aria-label="file example" required>
+          <div class="invalid-feedback">elija una imagen o archivo en referencia</div>
+        </div>
+      
+        <div class="mb-3">
+          <button class="btn btn-primary" type="submit" disabled>Submit form</button>
+        </div>
+      </form>
+<!--         <form action="" class="contact__form">
             <h2>Contactanos</h2>
             <input type="text" name="nombre" placeholder="Nombre*" required>
             <input type="text" name="apellido" placeholder="Apellido*" required>
@@ -59,7 +103,7 @@
               <button type="reset" class="button button__reset">Limpiar</button>
               <button type="submit" class="button buttton__submit">Enviar</button>
             </div>
-        </form>
+        </form> -->
     </main>
     <footer>
         <div class="redes-container">
