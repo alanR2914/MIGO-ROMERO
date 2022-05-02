@@ -201,13 +201,13 @@ section.hero_image {
 }
 
 .banner a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 9px 20px;
-    border: 3px solid #fff;
-    border-radius: 10px;
-    text-transform: uppercase;
-    transition: all .4s ease-in-out;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 9px 20px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
 }
 
 .banner a:hover {

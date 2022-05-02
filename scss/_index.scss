@@ -1,0 +1,212 @@
+main {
+    section {
+        .hero_image {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 20px);
+            background-color: $colorh1;
+            background-size: cover;
+            background-position: center;
+            transition: all 1s ease-in-out;
+            background-image: url(../images/R.jpg);
+            animation: banner 20s infinite linear;
+            .banner {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                color: $colorh1;
+                background-color: rgba(0, 22, 40, 0.6);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    font-size: 2rem;
+                    color: $colorh1;
+                    text-transform: uppercase;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 1rem 0;
+                    width: 100%;
+                    text-align: center;  
+                }
+                a {
+                    text-decoration: none;
+                    color: $colorh1;
+                    padding: 9px 20px;
+                    border: 3px solid #fff;
+                    border-radius: 10px;
+                    text-transform: uppercase;
+                    transition: all .4s ease-in-out;
+                    &:hover {
+                        font-weight: bold;
+                        border-radius: 10px;
+                        box-shadow: 5px 5px 5px #0f0707;
+                        color: #333;
+                        background-color: rgb(253, 249, 249);
+                        font-size: 20px; 
+                    }  
+                }
+            }
+        }
+    }
+    section {
+        .home__categoriesContainer {
+            display: flex;
+            flex-direction: column;
+            height: 700px;
+            justify-content: space-evenly;
+            padding: 2rem;
+            width: 80%;
+            margin: 4rem auto;
+            background-color: #007785;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            article {
+                .home__category--image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                    transition: transform 0.5s ;
+                    &:hover {
+                        transform: scale(.95);
+                    }
+                    a {
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        color: rgb(235, 235, 235);
+                        position: absolute;
+                        transition: all 0.5s ease-in;
+                        &:hover {
+                            color: rgb(255, 255, 255);
+                            width: 100%;
+                            text-align: center;
+                            padding: 0.3rem 0;
+                            transform: scale(1.2);
+                        } 
+                    }
+                    .filter {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        width: 100%;
+                        height: 100%;
+                        transition: background-color 0.5s ease-in-out;
+                        &:hover {
+                           background-color: rgba(0, 0, 0, 0.7); 
+                        }
+                    }
+                    #category__image1 {
+                        background-image: url("../images/trabajos-carreras.jpg");
+                        background-size: cover;
+                    }
+                    #category__image2 {
+                        background-image: url("../images/RABSEfUP2MOb1sz2WzN9.jpg");
+                        background-size: cover;
+                    }
+                    #category__image3 {
+                        background-image: url("../images/análisis-de-puesto-de-trabajo.jpg");
+                        background-size: cover;
+                    }
+                }
+            }  
+        }
+    }
+}
+@keyframes banner {
+    0%{
+        background-image: url(../images/R.jpg);
+    }
+    25%{
+        background-image: url(../images/R.jpg);
+    }
+    26%{
+        background-image: url(../images/trabajos-carreras.jpg);
+    }
+    50%{
+        background-image: url(../images/trabajos-carreras.jpg);
+    }
+    51%{
+        background-image: url(../images/obreros_0.jpg);
+    }
+    75%{
+        background-image: url(../images/obreros_0.jpg);
+    }
+    76%{
+        background-image: url(../images/zapatero-trabajo_1098-13118.webp);
+    }
+    100%{
+        background-image: url(../images/zapatero-trabajo_1098-13118.webp);
+    }
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkcyan;
+    margin: 0;
+    a {
+        margin: 0;
+        transition: color 0.5s ease;
+        color: #f5f5f5;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif; 
+        margin:   5px 0 0 0; 
+        &:hover {
+            color: blue;
+        } 
+    }
+    p {
+        margin: 0;
+        font-family: 'Roboto', sans-serif; 
+        float: right;
+    }
+    .redes-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul {
+            li {
+                display: inline-block;
+                margin: 0 5px;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                #instagram:hover {
+                    background-color: #e4405f;
+                }
+                #facebook:hover {
+                    background-color: #3b5999;
+                }
+                #youtube:hover {
+                    background: red;
+                }
+                #linkedin:hover {
+                    background-color: #007785;
+                }
+                #whatsapp:hover {
+                    background: green;
+                }
+
+                a {
+                    display: block;
+                    padding: 0 10px;
+                    background-color: #333;
+                    color: #f5f5f5;
+                    line-height: 50px;
+                    font-size: 18px;
+                    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+                    transition: .2s; 
+                    &:hover {
+                        transform: translateY(-3px) scale(1.05);
+                        filter: none; 
+                    } 
+                }
+            }
+        }
+    }
+}

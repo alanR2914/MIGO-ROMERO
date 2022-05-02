@@ -1,0 +1,23 @@
+div {
+    .container {
+        margin: 5px 5px 5px 5px;
+        width: 100%;
+        padding: 10px;   
+    }
+    .p_nosotros {
+        background-color: #007785;
+        color: #f5f5f5;
+    }
+}
+@media screen and (min-width: 768px) {
+    div.nosotros iframe {
+      display: flex;
+    }
+  
+    div.nosotros img {
+      display: flex;
+      align-items: center;
+      box-shadow: 5px 5px 5px 5px #007785;
+      max-width: 400px;
+    }
+  }

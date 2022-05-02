@@ -1,0 +1,25 @@
+{
+  "name": "mi-pagina-romero-alan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilosSass.scss style/estiloNuevo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanR2914/MIGO-ROMERO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanR2914/MIGO-ROMERO/issues"
+  },
+  "homepage": "https://github.com/alanR2914/MIGO-ROMERO#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

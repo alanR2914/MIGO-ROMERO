@@ -1,0 +1,54 @@
+.img-serv {
+    grid-area: img-serv;
+  }
+  
+  .servicios-1 {
+    grid-area: servicios-1;
+  }
+  
+  .servicios-2 {
+    grid-area: servicios-2;
+  }
+  .servicios-3 {
+    grid-area: servicios-3;
+  }
+  .servicios-4 {
+    grid-area: servicios-4;
+  }
+  main {
+      section {
+          div {
+              .div_servicios {
+                min-height: 100vh;
+                margin: 1rem 0;
+                padding: 1rem 0.5rem;
+                box-shadow: 5px 5px 10px #007785;
+                align-items: center;
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: 1fr repeat(2, .5fr);
+                grid-template-areas: 
+                "img-serv img-serv"
+                "servicios-1 servicios-2"
+                "servicios-3 servicios-4"; 
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+                }
+              }
+          }
+      }
+  }
+  @media screen and (min-width: 768px) {
+    main section div.div_servicios {
+  
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: 1fr .3fr;
+      grid-template-areas: 
+      "img-serv img-serv img-serv img-serv"
+      "servicios-1 servicios-2 servicios-3 servicios-4";
+    }
+  }
