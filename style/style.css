@@ -36,11 +36,14 @@ header {
     z-index: 999;
   }
 
-nav {
-  background-color: #007785;
-  width: 100%;
-  text-decoration: none;
+header.header__logo {
+    height: 3rem;
+    width: 3rem;
+    
+}
 
+header.header__logo img {
+    width: 100%;
 }
 header .header__burguerMenu {
     display: flex;
@@ -201,13 +204,13 @@ section.hero_image {
 }
 
 .banner a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding: 9px 20px;
-  border: 3px solid #fff;
-  border-radius: 10px;
-  text-transform: uppercase;
-  transition: all .4s ease-in-out;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 9px 20px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .4s ease-in-out;
 }
 
 .banner a:hover {
@@ -467,40 +470,67 @@ footer p {
 }
 
 /* trabaja */
-.main-trabaja {
+
+
+fieldset.datos_trabajo {
   background-color: #007785;
+  min-height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 
 }
 
+legend.trabaja {
+    font-family: 'Inspiration', cursive;
+    font-size: 50px;
+    font-weight: bold; 
+}
 
 
+fieldset.estudio {
+  background-color: #007785;
+  min-height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+legend.estudio {
+    font-family: 'Inspiration', cursive;
+    font-size: 50px;
+    font-weight: bold; 
+}
+
+label.form {
+    margin: 10px;
+    padding: 10px;
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.form {
+    margin: 10px;
+    padding: 10px;
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+}
 /* inicio novedades */
 
-div.divNovedades {
-  margin: 1%;
-  width: 100%;
+div.novedades {
   background-color: #007785;
   margin: 25px 5px 25px 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 /* fin de novedades */
 
 /*  page nosotros */
-div.container {
-  margin: 5px 5px 5px 5px;
-  width: 100%;
-  padding: 10px;
-  
-}
-p.p_nosotros {
-  background-color: #007785;
-  color: #f5f5f5;
 
-
-}
-/* 
 div.nosotros {
   display: flex;
   flex-direction: column;
@@ -510,19 +540,23 @@ div.nosotros {
   
 }
 
-/* div.nosotros img {
+div.nosotros img {
   display: flex;
   align-items: center;
   box-shadow: 5px 5px 5px 5px #007785;
   max-width: 300px;
-} 
+}
 
 div.nosotros iframe {
   display: none;
 }
 
+div.nosotros p.p_nosotros {
+    color: #007785;
+    margin: 50px;
+    text-align: center;
 
-
+}
 /* fin de nosotros */
 /* media queries nosotros */
 @media screen and (min-width: 768px) {
@@ -667,11 +701,6 @@ div.div_servicios img {
   background-color: rgb(7, 7, 7);
   color: white;
   cursor: pointer;
-}
-
-.divNovedades {
-  display: flex;
-  flex-direction: column;
 }
 
 /* fin de contacto */
